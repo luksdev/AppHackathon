@@ -1,0 +1,79 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary" no-border>
+
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="business"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>
+      Hoteis
+    </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content fullscreen="true">
+  <div class="title">
+    <h2>Hoteis Populares</h2>
+
+    <p>Veja todos</p>
+  </div>
+
+  <div class="event-slider">
+    <ion-slides [options]="{slidesPerView:'auto', zoom:false}" class="default-left-padding">
+      <ion-slide>
+        <ion-col class="ion-text-left">
+          <ion-card [routerLink]="['/escolha-car']" routerdirection="forward">
+            <ion-card-header class="ion-no-padding">
+              <img src="https://media-cdn.tripadvisor.com/media/photo-s/16/1a/ea/54/hotel-presidente-4s.jpg" alt="">
+            </ion-card-header>
+            <ion-card-content>
+              <p><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></p>
+              <h2 class="eventname">Hotel Montrial</h2>
+              <p class="location"><ion-icon name="location"></ion-icon>Maceió, Alagoas</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-col class="ion-text-left">
+          <ion-card [routerLink]="['/escolha-car']" routerdirection="forward">
+            <ion-card-header class="ion-no-padding">
+              <img src="https://www.focus.jor.br/wp-content/uploads/2020/01/1920px-Eurostars-madrid-550x367.jpg" alt="">
+            </ion-card-header>
+            <ion-card-content>
+              <p><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></p>
+              <h2 class="eventname">Hotel EUROSTARS</h2>
+              <p class="location"><ion-icon name="location"></ion-icon>Madrid, Espanha</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+    </ion-slides>
+
+    <div>
+      <ion-card class="cardbaixo">
+        <ion-card-content class="cardBaixo">
+          <h1 style="font-size: 14px;">Lorem Ipsum</h1>
+        </ion-card-content>
+      </ion-card>
+      
+      <ion-card class="cardbaixo">
+        <ion-card-content class="cardBaixo">
+          <h1 style="font-size: 14px;">Lorem Ipsum</h1>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    
+  </div>
+</ion-content>

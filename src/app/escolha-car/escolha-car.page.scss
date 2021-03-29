@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    font-family: Poppins;
+}
+
+.title{
+    padding: 10px 26px 10px 26px;
+ }
+
+.titleCar{
+    padding: 10px 26px 10px 15px;
+ }
+
+
+
+ ion-col{
+    
+    padding-left: 0;
+
+    ion-card{
+        width: 94.4%;
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px 2px rgba(0,0,0,0.16);
+
+
+        ion-card-header{
+            img{
+                width: 100%;
+            }
+        }
+
+        ion-card-content{
+            padding-top: 13px;
+
+            .date{
+                color: #364f6b;
+                font-size: 10px;
+                margin-bottom: 5px;
+            }
+            
+            .eventname{
+                
+                font-size:14px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            
+            .location{
+                display: flex;
+                align-items: center;
+                color: var(--ion-color-primary);
+                font-size: 10px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

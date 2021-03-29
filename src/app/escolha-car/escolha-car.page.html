@@ -1,0 +1,65 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar style="background-color: white" no-border>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title style="color: black">Escolha seu carro </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="title">
+    <span>Data inicial da utilização:</span>
+    <ion-item style="margin-bottom: 5px;">
+      
+      <ion-label style="color: black;">MM DD YY</ion-label>
+      <ion-datetime displayFormat="DD MM YY" placeholder="Selecione a data" style="color: black;" required></ion-datetime>
+    </ion-item>
+
+    <span>Data final da utilização:</span>
+    <ion-item>
+      
+      <ion-label style="color: black;">MM DD YY</ion-label>
+      <ion-datetime displayFormat="DD MM YY" placeholder="Selecione a data" style="color: black;" required></ion-datetime>
+    </ion-item>
+  </div>
+
+  <h3 class="titleCar">Carros disponíveis: </h3>
+  <ion-col class="ion-text-left">
+    <ion-card [routerLink]="['/passagem-aerea']" routerdirection="forward">
+      <ion-card-header class="ion-no-padding">
+        <img src="https://revistacarro.com.br/wp-content/uploads/2019/02/Yaris-VW-9.jpg" alt="">
+      </ion-card-header>
+      <ion-card-content>
+        <p><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></p>
+        <h2 class="eventname">Polo, Volkswagen</h2>
+        <p class="location"><ion-icon name="car"></ion-icon> 2300Km, 2021</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+  <ion-col class="ion-text-left">
+    <ion-card [routerLink]="['/passagem-aerea']" routerdirection="forward">
+      <ion-card-header class="ion-no-padding">
+        <img src="https://revistacarro.com.br/wp-content/uploads/2018/12/Virtus.jpg" alt="">
+      </ion-card-header>
+      <ion-card-content>
+        <p><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></p>
+        <h2 class="eventname">Virtus, Volkswagen</h2>
+        <p class="location"><ion-icon name="car"></ion-icon> 740Km, 2021</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+  <ion-col class="ion-text-left">
+    <ion-card [routerLink]="['/passagem-aerea']" routerdirection="forward">
+      <ion-card-header class="ion-no-padding">
+        <img src="https://destaknewsbrasil.com.br/wp-content/uploads/2021/01/Ford-Ka-3.jpg" alt="">
+      </ion-card-header>
+      <ion-card-content>
+        <p><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half-outline"></ion-icon></p>
+        <h2 class="eventname">EcoSport, FORD</h2>
+        <p class="location"><ion-icon name="car"></ion-icon> 8300Km, 2020</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+</ion-content>

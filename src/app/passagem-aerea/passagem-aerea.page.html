@@ -1,0 +1,76 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar style="background-color: white" no-border>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title style="color: black">Passagem aérea </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="airplane-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>     
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="titleAviso">
+    <h3>Sua passagem aérea será totalmente gratuita!</h3>
+    <h5 style="font-size: 14px;">*Apenas com seu cartão Smiles*</h5>
+    <span>Boa viagem!</span>
+  </div>
+
+  <div class="title">
+    <h3>Selecione as datas: </h3>
+
+    <ion-item>
+      <ion-label>Data de ida</ion-label>
+      <ion-datetime placeholder="Selecione a data"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Hora do vôo</ion-label>
+      <ion-datetime display-format="h:mm A" picker-format="h:mm A" placeholder="Selecione a hora"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Data de volta</ion-label>
+      <ion-datetime placeholder="Selecione a data"></ion-datetime>
+    </ion-item>
+  </div>
+
+ 
+  <div class="title">
+    <h3>Forma de pagamento:</h3>
+    <ion-radio-group value="Smiles">
+      <ion-item>
+        <ion-label>Cartão Smiles | <ion-icon name="card"></ion-icon></ion-label>
+        <ion-radio slot="start" value="smiles" checked></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+
+    <ion-item>
+      <ion-label position="floating" type="tel" pattern="[0-16]*">Número do cartão</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" type='number'>Validade</ion-label>
+      <ion-datetime placeholder="Selecione a data"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" maxLength="3" type="tel" pattern="[0-3]">CVC</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+  </div>
+
+  <div class="concluir">
+    <ion-button [routerLink]="['/mapdone']" routerdirection="forward" color="success">Finalizar pedido</ion-button>
+    <span>Iremos mostrar o aeroporto mais próximo de você!</span>
+  </div>
+
+
+  <div class="smiles">
+    <img width='200px' src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Gol_Smiles_logo.svg/1200px-Gol_Smiles_logo.svg.png" alt="">
+  </div>
+</ion-content>

@@ -1,0 +1,64 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary" no-border>
+
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="location"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>
+      Locais
+    </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content fullscreen="true">
+  <div class="title">
+    <h2>Pontos turísticos</h2>
+
+    <p>Veja todos</p>
+  </div>
+
+  <div class="event-slider">
+    <ion-slides [options]="{slidesPerView:'auto', zoom:false}" class="default-left-padding">
+      <ion-slide>
+        <ion-col class="ion-text-left">
+          <ion-card [routerLink]="['/escolha-car']" routerdirection="forward">
+            <ion-card-header class="ion-no-padding">
+              <img src="https://live.staticflickr.com/5093/5488709682_a307fa53b6_b.jpg" alt="">
+            </ion-card-header>
+            <ion-card-content>
+              <p><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></p>
+              <h2 class="eventname">Barra de São Miguel</h2>
+              <p class="location"><ion-icon name="location"></ion-icon>Barra de São Miguel, Alagoas</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-col class="ion-text-left">
+          <ion-card>
+            <ion-card-header class="ion-no-padding">
+              <img src="https://live.staticflickr.com/5093/5488709682_a307fa53b6_b.jpg" alt="">
+            </ion-card-header>
+            <ion-card-content>
+              <p><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></p>
+              <h2 class="eventname">Praia do Gunga</h2>
+              <p class="location"><ion-icon name="location"></ion-icon>Roteiro, Alagoas</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>

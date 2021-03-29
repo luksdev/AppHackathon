@@ -1,0 +1,7 @@
+{
+  "name": "moveOnFree",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

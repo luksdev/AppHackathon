@@ -1,0 +1,63 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary" no-border>
+
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="car"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>
+      Carros disponiveis
+    </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content fullscreen="true">
+  <div class="title">
+    <h2>Carros Populares</h2>
+
+    <p>Veja todos</p>
+  </div>
+
+  <div class="event-slider">
+    <ion-slides [options]="{slidesPerView:'auto', zoom:false}" class="default-left-padding">
+      <ion-slide>
+        <ion-col class="ion-text-left">
+          <ion-card [routerLink]="['/escolha-car']" routerdirection="forward">
+            <ion-card-header class="ion-no-padding">
+              <img src="https://revistacarro.com.br/wp-content/uploads/2019/02/Yaris-VW-9.jpg" alt="">
+            </ion-card-header>
+            <ion-card-content>
+              <!-- <p><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></p> -->
+              <h2 class="eventname">Polo, Volkswagen</h2>
+              <p class="location"><ion-icon name="card"></ion-icon>2304km, 2021</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-col class="ion-text-left">
+          <ion-card>
+            <ion-card-header class="ion-no-padding">
+              <img src="https://revistacarro.com.br/wp-content/uploads/2018/12/Virtus.jpg" alt="">
+            </ion-card-header>
+            <ion-card-content>
+              <h2 class="eventname">Virtus, Volkswagen</h2>
+              <p class="location"><ion-icon name="car"></ion-icon>1610Km, 2021</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>

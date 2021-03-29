@@ -1,0 +1,15 @@
+.map-container {
+    height: 100%;
+  }
+        #map_canvas {
+         height: 100% !important;
+         width: 100% !important;
+         top: 0;
+         left: 0;
+         position: absolute;
+        }
+
+ion-searchbar{
+  --background: #ffffff;
+  color: black;
+}
